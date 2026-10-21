@@ -1,0 +1,17 @@
+# proxy4_MobileClien1C configuration
+
+[server]
+listen_port=5037
+backend_port=5038
+
+[rewrite]
+# mode: vm = 10.0.2.2 (host alias for VM NAT); pc = current PC IPv4 (auto); manual = manual_ip
+mode=pc
+manual_ip=
+
+[adb]
+# adb.exe is searched in current directory first, then by adb_path
+adb_path=
+
+[log]
+log_file=proxy4_MobileClien1C.log
